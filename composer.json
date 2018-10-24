@@ -1,0 +1,24 @@
+{
+    "name": "endeavors/components-encryption",
+    "description": "Use Encrypter Independently",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+		"orchestra/testbench": "2.2.x",
+        "phpunit/phpunit": "~4",
+        "mockery/mockery": "~0.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Endeavors\\Components\\Encryption\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Endeavors\\Components\\Encryption\\Tests\\": "tests/"
+        }
+    }
+}
