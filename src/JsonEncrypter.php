@@ -4,8 +4,9 @@ namespace Endeavors\Components\Encryption;
 
 use Endeavors\Components\Encryption\Contracts\IEncrypter;
 use Endeavors\Components\Encryption\Contracts\IOriginalEncrypter;
+use Endeavors\Components\Encryption\Contracts\IJsonDecrypter;
 
-class JsonEncrypter implements IEncrypter
+class JsonEncrypter implements IJsonDecrypter
 {
     private $encrypter;
 
