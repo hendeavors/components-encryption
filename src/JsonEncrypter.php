@@ -37,7 +37,7 @@ class JsonEncrypter implements IEncrypter
 
     protected function asJson($value)
     {
-        if( ! is_string($value) ) {
+        if (!is_string($value)) {
             return json_encode($value);
         }
 
@@ -46,11 +46,11 @@ class JsonEncrypter implements IEncrypter
 
     protected function fromJson($value)
     {
-        if( null === json_decode($value) ) {
+        if (null === json_decode($value)) {
             return $value;
         }
 
-        if($this->decryptAsObject) {
+        if ($this->decryptAsObject) {
             return json_decode($value);
         }
 
